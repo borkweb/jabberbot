@@ -11,7 +11,7 @@ brew install node
 ### npm (of course)
 Run:
 ````
-curl http://npmjs.org/install.sh | sh
+curl https://npmjs.org/install.sh | sh
 ````
 
 ### [icu4c](http://userguide.icu-project.org/)
