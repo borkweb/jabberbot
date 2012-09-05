@@ -1,4 +1,4 @@
-# Plymouth State University Jabber Bot
+# Jabber Bot
 
 ## Requirements
 ### node (of course)
