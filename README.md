@@ -99,3 +99,21 @@ number `10`):
 ````
 sudo ipfw add 10 allow udp from SOME.IP.ADD.RESS to any 8888
 ````
+
+## Running as a process
+
+If you, like me, want to have this bad boy running any time you need it,
+you can set it up as a process using
+[forever](https://github.com/nodejitsu/forever), a handy npm.  To get
+it, run:
+
+````
+sudo npm install -g forever
+````
+
+Then, to forever run the bot, simply:
+
+````
+cd /path/to/jabberbot
+forever bot.js
+````
