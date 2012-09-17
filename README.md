@@ -72,10 +72,30 @@ vi config.js
 
 *Note:* you'll need to create a jabber account somewhere so this will all work.  If you don't have your own domain name, using Gmail is always an option.  Once you've created your bot's account, you'll need to log in as your bot via a chat client and invite your primary account as a friend.
 
+_Obviously, replace SOME.IP.ADD.RESS with the IP address that you expect
+to receive UDP packets from._
+
 ## Running the Bot
 
 Run this bad boy like so:
 
 ````
 node bot.js
+````
+
+## Punching a hole in your firewall (if required)
+If you plan on accepting UDP traffic from a host other than your local
+host, you'll probably need to punch a hole in your firewall.
+
+Check to see what you have in `ipfw`:
+
+````
+sudo ipfw list
+````
+
+Choose a sequence number for your firewall rule (this example uses the
+number `10`):
+
+````
+sudo ipfw add 10 allow udp from SOME.IP.ADD.RESS to any 8888
 ````
