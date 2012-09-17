@@ -11,7 +11,7 @@ var settings = {
 		jid       : process.env.bot_jid,
 		password  : process.env.bot_password,
 		host      : process.env.bot_host,
-		port			: process.env.bot_port,
+		port      : process.env.bot_port,
 	},
 };
 
