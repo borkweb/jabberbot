@@ -1,7 +1,6 @@
 var config = require("./config");
-var xmpp = require("simple-xmpp"),
-    sys  = require("util");
-
+var xmpp = require("simple-xmpp");
+var sys  = require("util");
 var dgram = require('dgram');
 
 var settings = {
